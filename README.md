@@ -52,9 +52,8 @@ The system follows a modern serverless architecture:
 
 ```mermaid
 graph LR
-    A[GitHub Actions \n(Daily Automation)] -->|Runs Scraper| B(Python Script \n BeautifulSoup + Pandas)
-    B -->|ETL Process| C[(Neon PostgreSQL \n Cloud Database)]
-    D[Streamlit Cloud] -->|Queries Data| C
-    D -->|Displays| E[Interactive Web Dashboard]
-
+    A["GitHub Actions<br>(Daily Automation)"] -->|Runs Scraper| B["Python Script<br>BeautifulSoup + Pandas"]
+    B -->|ETL Process| C[("Neon PostgreSQL<br>Cloud Database")]
+    D["Streamlit Cloud"] -->|Queries Data| C
+    D -->|Displays| E["Interactive Web Dashboard"]
 
